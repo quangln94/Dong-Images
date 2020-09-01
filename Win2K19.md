@@ -207,6 +207,7 @@ Enable Sysprep và shutdown máy
 ## 3.Thực hiện trên Host KVM
 ### 3.1. Cài đặt bộ libguestfs-tools để xử lý image (nên cài đặt trên Ubuntu OS để có bản libguestfs mới nhất)
 ```
+yum install libguestfs-tools -y
 apt-get install libguestfs-tools -y
 ```
 
@@ -322,12 +323,8 @@ Thử đăng nhập vào máy ảo với password `123456a@`
 ## Done
 
 
-Tham khảo: 
-
-[1] - http://www.stratoscale.com/blog/storage/deploying-ceph-challenges-solutions/?utm_source=twitter&utm_medium=social&utm_campaign=blog_deploying-ceph-challenges-solutions
-
-[2] - https://pve.proxmox.com/wiki/Qemu-guest-agent
-
-[3] - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/sect-QEMU_Guest_Agent-Running_the_QEMU_guest_agent_on_a_Windows_guest.html
-
-[4] - https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Virtualization_Deployment_and_Administration_Guide/chap-QEMU_Guest_Agent.html
+## Tài liệu tham khảo: 
+- http://www.stratoscale.com/blog/storage/deploying-ceph-challenges-solutions/?utm_source=twitter&utm_medium=social&utm_campaign=blog_deploying-ceph-challenges-solutions
+- https://pve.proxmox.com/wiki/Qemu-guest-agent
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/sect-QEMU_Guest_Agent-Running_the_QEMU_guest_agent_on_a_Windows_guest.html
+- https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Virtualization_Deployment_and_Administration_Guide/chap-QEMU_Guest_Agent.html
