@@ -1,12 +1,26 @@
 # Disk Image Builder
-Diskimage-builder is an automated disk image creation tool that supports a variety of distributions and architectures. Diskimage-builder (DIB) can build images for Fedora, Red Hat Enterprise Linux, Ubuntu, Debian, CentOS, and openSUSE. DIB is organized in a series of elements that build on top of each other to create specific images.
+Diskimage-builder laf 1 tool tự động tạo image hỗ trợ nhiều bản distributions và architectures. 
 
-To build an image, call the following script:
+Diskimage-builder (DIB) có thể build images cho:
+ - Fedora
+ - Red Hat Enterprise Linux
+ - Ubuntu
+ - Debian
+ - CentOS
+ - openSUSE
+ 
+ DIB là tập hợp các `elements` được build chồng lên nhau để tạo ra các images cụ thể.
 
-# disk-image-create ubuntu vm
-This example creates a generic, bootable Ubuntu image of the latest release.
+Để build 1 image Ubuntu phiên bản latest, thực hiện như sau:
+```sh
+disk-image-create ubuntu vm
+```
 
-Further customization could be accomplished by setting environment variables or adding elements to the command-line:
+Có thể thực hiện thêm các tùy chọn bằng cách thiết lập biết môi trường hoặc thêm các `elements` vào lệnh:
+```sh
+disk-image-create -a armhf ubuntu vm
+```
 
-# disk-image-create -a armhf ubuntu vm
-This example creates the image as before, but for arm architecture. More elements are available in the git source directory and documented in the diskimage-builder elements documentation.
+## Tài liệu tham khảo
+- https://docs.openstack.org/image-guide/create-images-automatically.html
+- https://opendev.org/openstack/diskimage-builder/src/branch/master/diskimage_builder/elements
