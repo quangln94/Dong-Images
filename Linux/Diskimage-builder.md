@@ -1,5 +1,13 @@
 # Disk Image Builder
-Diskimage-builder laf 1 tool tự động tạo image hỗ trợ nhiều bản distributions và architectures. 
+Diskimage-builder là  1 tool tự động tạo image hỗ trợ nhiều bản distributions và architectures. 
+
+Distributions hỗ trợ build image:
+- Centos 6, 7
+- Debian 8 (“jessie”)
+- Fedora 30, 31
+- RHEL 6, 7
+- Gentoo
+- openSUSE Leap 42.3, 15.0, 15.1 and Tumbleweed
 
 Diskimage-builder (DIB) có thể build images cho:
  - Fedora
